@@ -23,11 +23,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "webpack Boilerplate",
-      template: path.resolve(__dirname, "./src/pages/index.html"),
-      filename: "index.html",
-    }),
-    new HtmlWebpackPlugin({
-      title: "webpack Boilerplate",
       template: path.resolve(__dirname, "./src/pages/news.html"),
       filename: "news.html",
     }),
@@ -40,6 +35,11 @@ module.exports = {
       title: "webpack Boilerplate",
       template: path.resolve(__dirname, "./src/pages/rozklad.html"),
       filename: "rozklad.html",
+    }),
+    new HtmlWebpackPlugin({
+      title: "webpack Boilerplate",
+      template: path.resolve(__dirname, "index.html"),
+      filename: "index.html",
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
